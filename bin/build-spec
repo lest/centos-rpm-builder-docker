@@ -5,6 +5,6 @@ set -x
 
 SPEC=$1
 
-yum-builddep ${SPEC}
+yum-builddep -y ${SPEC}
 spectool -g -R ${SPEC}
 rpmbuild -ba ${SPEC}
