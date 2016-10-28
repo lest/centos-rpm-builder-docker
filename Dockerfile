@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Sergey Nartimov <just.lest@gmail.com>
 
-RUN yum install -y rpm-build redhat-rpm-config rpmdevtools && \
+RUN yum install -y rpm-build rpm-sign redhat-rpm-config rpmdevtools && \
   yum clean all
 RUN echo '%_topdir /rpmbuild' > /root/.rpmmacros
 
