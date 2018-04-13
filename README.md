@@ -1,3 +1,10 @@
+[![Build Status - Master](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=master)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
+[![Build Status - Staging](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=staging)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
+
+
+[![Centos7 Docker Repository on Quay](https://quay.io/repository/zoonage/centos7-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos7-rpm-build)
+[![Centos6 Docker Repository on Quay](https://quay.io/repository/zoonage/centos6-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos6-rpm-build)
+
 # Description
 
 Forked from lest/centos7-rpm-builder-docker to add support in for Centos6. Nearly all the work was done by Sergey Nartimov (lest).
