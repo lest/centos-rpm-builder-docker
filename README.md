@@ -2,7 +2,6 @@ Master [![Build Status](https://travis-ci.org/zoonage/centos-rpm-builder-docker.
 
 Staging [![Build Status](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=staging)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
 
-
 Centos7 [![Docker Repository on Quay](https://quay.io/repository/zoonage/centos7-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos7-rpm-build)
 
 Centos6 [![Docker Repository on Quay](https://quay.io/repository/zoonage/centos6-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos6-rpm-build)
@@ -22,6 +21,7 @@ Forked from lest/centos7-rpm-builder-docker to add support in for Centos6. Nearl
 # Contributing
 
 Please feel free to open a PR against the staging branch and open issues for any problems.
+There is an issue where you have to re-chown files after running `make test`. This is something to do with user IDs when Docker is using a mounted volume. This has been partially resolved and now they are re-chowned after the build process.
 
 # Docker CentOS 7 RPM Builder
 
