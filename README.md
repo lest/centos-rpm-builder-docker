@@ -1,9 +1,11 @@
-[![Build Status - Master](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=master)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
-[![Build Status - Staging](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=staging)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
+Master [![Build Status](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=master)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
+
+Staging [![Build Status](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=staging)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
 
 
-[![Centos7 Docker Repository on Quay](https://quay.io/repository/zoonage/centos7-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos7-rpm-build)
-[![Centos6 Docker Repository on Quay](https://quay.io/repository/zoonage/centos6-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos6-rpm-build)
+Centos7 [![Docker Repository on Quay](https://quay.io/repository/zoonage/centos7-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos7-rpm-build)
+
+Centos6 [![Docker Repository on Quay](https://quay.io/repository/zoonage/centos6-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos6-rpm-build)
 
 # Description
 
