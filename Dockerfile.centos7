@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Sergey Nartimov <just.lest@gmail.com>
+MAINTAINER Aaron George <aarongeorge@me.com>
 
 RUN yum install -y rpm-build rpm-sign redhat-rpm-config rpmdevtools createrepo && \
   yum clean all
