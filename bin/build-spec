@@ -5,6 +5,13 @@ set -x
 
 SPEC=$1
 
+uid=$(stat -c'%u' ${SPEC})
+gid=$(stat -c'%g' ${SPEC})
+
+chown -R "$(id -u):$(id -g)" /rpmbuild/
+
 yum-builddep -y ${SPEC}
 spectool -g -R ${SPEC}
 rpmbuild -ba ${SPEC}
+
+chown -R "${uid}:${gid}" /rpmbuild/
