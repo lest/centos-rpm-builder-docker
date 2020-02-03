@@ -1,10 +1,10 @@
-Master [![Build Status](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=master)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
+Master [![Build Status](https://travis-ci.org/lest/centos-rpm-builder-docker.svg?branch=master)](https://travis-ci.org/lest/centos-rpm-builder-docker)
 
-Staging [![Build Status](https://travis-ci.org/zoonage/centos-rpm-builder-docker.svg?branch=staging)](https://travis-ci.org/zoonage/centos-rpm-builder-docker)
+Staging [![Build Status](https://travis-ci.org/lest/centos-rpm-builder-docker.svg?branch=staging)](https://travis-ci.org/lest/centos-rpm-builder-docker)
 
-Centos7 [![Docker Repository on Quay](https://quay.io/repository/zoonage/centos7-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos7-rpm-build)
+Centos7 [![Docker Repository on Quay](https://quay.io/repository/lest/centos7-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/lest/centos7-rpm-build)
 
-Centos6 [![Docker Repository on Quay](https://quay.io/repository/zoonage/centos6-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/zoonage/centos6-rpm-build)
+Centos6 [![Docker Repository on Quay](https://quay.io/repository/lest/centos6-rpm-build/status "Docker Repository on Quay")](https://quay.io/repository/lest/centos6-rpm-build)
 
 # Description
 
@@ -13,10 +13,10 @@ Forked from lest/centos7-rpm-builder-docker to add support in for Centos6. Nearl
 ## Using
 
 ### Centos 6
-`docker pull quay.io/zoonage/centos6-rpm-build`
+`docker pull quay.io/lest/centos6-rpm-build`
 
 ### Centos 7
-`docker pull quay.io/zoonage/centos7-rpm-build`
+`docker pull quay.io/lest/centos7-rpm-build`
 
 # Contributing
 
@@ -30,7 +30,7 @@ Example usage:
 ``` shell
 docker run --rm \
   -v ${PWD}:/rpmbuild \
-  <TBA>/centos7-rpm-builder \
+  lest/centos7-rpm-builder \
   bin/build-spec SPECS/my-package.spec
 ```
 
@@ -41,6 +41,6 @@ Example usage:
 ``` shell
 docker run --rm \
   -v ${PWD}:/rpmbuild \
-  <TBA>/centos6-rpm-builder \
+  lest/centos6-rpm-builder \
   bin/build-spec SPECS/my-package.spec
 ```
