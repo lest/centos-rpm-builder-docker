@@ -1,0 +1,11 @@
+FROM centos:8
+MAINTAINER Sergey Nartimov <just.lest@gmail.com>
+
+RUN dnf install -y 'dnf-command(config-manager)' && dnf config-manager --enable PowerTools
+RUN yum install -y yum-utils rpm-build rpm-sign redhat-rpm-config rpmdevtools createrepo && \
+  yum clean all
+RUN echo '%_topdir /rpmbuild' > /root/.rpmmacros
+
+WORKDIR /rpmbuild
+
+ADD bin/build-spec /usr/local/bin/build-spec

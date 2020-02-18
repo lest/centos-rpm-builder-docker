@@ -24,13 +24,12 @@ Please feel free to open a PR against the staging branch and open issues for any
 There is an issue where you have to re-chown files after running `make test`. This is something to do with user IDs when Docker is using a mounted volume. This has been partially resolved and now they are re-chowned after the build process.
 
 # Docker CentOS 7 RPM Builder
-
 Example usage:
 
 ``` shell
 docker run --rm \
   -v ${PWD}:/rpmbuild \
-  lest/centos7-rpm-builder \
+  lest/centos-rpm-builder:8 \
   bin/build-spec SPECS/my-package.spec
 ```
 
