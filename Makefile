@@ -1,3 +1,9 @@
+build9:
+	docker build --pull --force-rm \
+		-f Dockerfile.stream9 \
+		-t lest/centos-rpm-builder:stream9 \
+		.
+
 build8:
 	docker build --pull --force-rm \
 		-f Dockerfile.8 \
