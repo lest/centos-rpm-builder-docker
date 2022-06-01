@@ -2,7 +2,7 @@ FROM quay.io/centos/centos:stream9
 MAINTAINER Sergey Nartimov <just.lest@gmail.com>
 
 RUN dnf install -y 'dnf-command(config-manager)' && dnf config-manager --set-enabled crb
-RUN yum install -y yum-utils rpm-build rpm-sign redhat-rpm-config rpmdevtools createrepo && \
+RUN yum install -y yum-utils rpm-build rpm-sign redhat-rpm-config rpmdevtools createrepo systemd-rpm-macros && \
   yum clean all
 RUN echo '%_topdir /rpmbuild' > /root/.rpmmacros
 
